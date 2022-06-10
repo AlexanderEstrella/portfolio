@@ -1,18 +1,22 @@
-.body-ctrl {
-    background-color: black;
+body {
+    background-color: #21232c;
     color: white;
     font-family: sans-serif;
     font-size: 1.5rem;
   
 }
 i {
-    display:flex;
-    justify-content: center;
-    font-size:1.3em;
+  display:flex;
+  justify-content:center;
+  font-size: 1.5em;
 }
 i:hover {
-  font-size:1.5em;
+  font-size:2em;
   color:yellow;
+}
+.iarrow {
+    top: 550px
+      
 }
 
 h1, h2 {
@@ -21,6 +25,7 @@ h1, h2 {
     text-decoration:underline white;
 
 }
+
 
 li {
     list-style:none;
@@ -185,6 +190,7 @@ form {
   .aboutimg {
     display:flex;
     margin:0 auto;
+    width:200px;
   }
 .aboutdetails {
     font-size: 1.5rem;
@@ -195,13 +201,14 @@ form {
 }
 
   #skills ul {
-    position: relative;
     margin-top:50px;
     display:flex;
     flex-direction:column;
-    left:150px;
+    align-content:center;
+    width:auto;
+    
   }
-
+  
 
 .containter-cards {
     
@@ -209,37 +216,9 @@ form {
     flex-direction:column;
     margin: 0 auto;
 }
+  
   .card {
     display:flex;
     width: 18rem;
     margin: 0 auto;
   }
-  
-  .iarrow {
-    top:10px;
-      
-}
-}
- 
-@media screen and (max-width: 800px) {
-.iarrow {
-    top: 300px
-      
-}
-}
-
-@media screen and (max-width: 1500px) {
-.iarrow {
-    top: 500px
-      
-}
-}
-
-@media screen and (max-width: 1200px) {
-.iarrow {
-    top: 300px
-      
-}
-
-}
- 
