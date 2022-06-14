@@ -46,10 +46,88 @@ li {
 /* Home page */
 
 .Welcomepage {
-    position: relative;
-    padding: 9%;
-
+  margin-top: 50px;
+  position: relative;
+    display:flex;
+    font-size:100px;
+    font-family:arial;
+    font-weight:600;
+    justify-content: center;
+   right: 15%;
 }
+
+.intro {
+  display:flex;
+  position: relative;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  font-size:100px;
+  font-family:arial;
+  font-weight:600;
+  top: -50px;
+}
+.im {
+  
+}
+
+.name {
+  color: grey;
+}
+.status {
+  display:flex;
+  position:relative;
+  font-size: 20px;
+  left: 200px;
+  top: 10px;
+  text-transform: uppercase;
+  flex-direction:row;
+  flex-wrap: wrap;
+  color: aliceblue;
+  text-decoration: underline;
+}
+
+.h {
+  opacity:0;
+  animation: drop .4s linear forwards;
+  color: #9b5de5;
+}
+
+.e {
+  opacity:0;
+  animation: drop .4s linear forwards .2s;
+  color: #f15bb5;
+}
+
+.l {
+  opacity:0;
+  animation: drop .4s linear forwards .4s;
+  color: #fee440;
+}
+
+.l2 {
+  opacity:0;
+  animation: drop .4s linear forwards .6s;
+  color: #00bbf9;
+}
+
+.o {
+  opacity:0;
+  animation: drop .4s linear forwards .8s;
+  color: #00f5d4;
+}
+
+@keyframes drop {
+  0% {transform: translateY(-200px) scaleY(0.9); opacity: 0;}
+  5% {opacity: .7;}
+  50% {transform: translateY(0px) scaleY(1); opacity: 1;}
+  65% {transform: translateY(-17px) scaleY(.9); opacity: 1;}
+  75% {transform: translateY(-22px) scaleY(.9); opacity: 1;}
+  100% {transform: translateY(0px) scaleY(1); opacity: 1;}
+}
+
 
 .Pagedetails {
     position: relative;
@@ -63,8 +141,6 @@ li {
     text-decoration:underline;
     
 }
-
-
 
 /* About me */
 
