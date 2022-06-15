@@ -69,9 +69,6 @@ li {
   font-weight:600;
   top: -50px;
 }
-.im {
-  
-}
 
 .name {
   color: grey;
@@ -291,4 +288,26 @@ form {
     width: 18rem;
     margin: 0 auto;
   }
+}
+@media screen and (max-width: 1700px) {
+    
+    .intro {
+  display:flex;
+  margin: auto;
+  justify-content: center;
+  font-size:100px;
+  font-family:arial;
+  font-weight:600;
+  top: -50px;
+}
+
+.status {
+  display:flex;
+  margin: 0 auto;
+    justify-content: center;
+  text-transform: uppercase;
+  flex-direction:column;
+  color: aliceblue;
+  text-decoration: underline;
+}
 }
