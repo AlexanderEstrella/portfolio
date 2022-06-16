@@ -1,5 +1,5 @@
 .body-ctrl {
-    background-color: black;
+    background-color: #0B0C10;
     color: white;
     font-family: sans-serif;
     font-size: 1.5rem;
@@ -33,11 +33,12 @@ li {
 /* nav */
 .nav-link {
     text-transform:uppercase;
+  font-family: courier, monospace;
     font-size:1rem;
     
 }
 .nav-link:hover {
-    text-decoration:underline purple 2px;
+    text-decoration:underline #66FCF1 5px;
     text-underline-offset: 0.5em;
     
 }
@@ -46,74 +47,82 @@ li {
 /* Home page */
 
 .Welcomepage {
-  margin-top: 50px;
-  position: relative;
+  margin-top: 100px;
     display:flex;
     font-size:100px;
     font-family:arial;
     font-weight:600;
     justify-content: center;
-   right: 15%;
+   color:#66FCF1;
 }
 
 .intro {
-  display:flex;
+ display:flex;
   position: relative;
   margin: auto;
   flex-direction: column;
   justify-content: center;
-  width: 200px;
-  height: 200px;
   font-size:100px;
   font-family:arial;
   font-weight:600;
   top: -50px;
 }
 
-.name {
-  color: grey;
-}
-.status {
+.subheading {
   display:flex;
-  position:relative;
-  font-size: 20px;
-  left: 200px;
-  top: 10px;
-  text-transform: uppercase;
-  flex-direction:row;
-  flex-wrap: wrap;
-  color: aliceblue;
-  text-decoration: underline;
+  align-self:center;
+  justify-content:center;
+  font-weight: 400px;
+  font-family: open sans;
+  font-size: 2rem;
+  text-decoration:none;
+  color: #fff23;
+}
+.subsubheading {
+  font-family: fascinate;
+  text-align:center;
+  font-weight:600px;
+  font-size:1.0rem;
+  opacity:0.5;
+}
+.socials {
+  position: fixed;
+  list-style-type:none;
+  
+}
+li:hover {
+  color:#66FCF1;
+  font-size: 3rem;
 }
 
 .h {
   opacity:0;
   animation: drop .4s linear forwards;
-  color: #9b5de5;
+  
 }
 
 .e {
   opacity:0;
   animation: drop .4s linear forwards .2s;
-  color: #f15bb5;
+  
 }
 
 .l {
   opacity:0;
   animation: drop .4s linear forwards .4s;
-  color: #fee440;
+  
 }
 
 .l2 {
   opacity:0;
   animation: drop .4s linear forwards .6s;
-  color: #00bbf9;
+
 }
 
 .o {
   opacity:0;
   animation: drop .4s linear forwards .8s;
-  color: #00f5d4;
+  
 }
 
 @keyframes drop {
@@ -126,18 +135,6 @@ li {
 }
 
 
-.Pagedetails {
-    position: relative;
-    padding: 4%;
-    text-align: center;
-
-}
-
-
-.lttr {
-    text-decoration:underline;
-    
-}
 
 /* About me */
 
