@@ -193,22 +193,21 @@ margin-left:10%;
 }
 
 
-#skills .icons {
-    width: 150px;
-    height:150px;
-    
-}
-
-#skills ul {
-    
-    width: 600px;
-    gap:10px;
-    margin: auto;
+.tools-icons {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
+    margin: 5% auto;
+    width: 50%;
+    text-align: center;
 }
-
+.tools-icons i {
+     display: flex;
+    font-size: 7rem;
+    flex-basis: 23%;
+    margin: 10px;
+    padding: 10px;
+}
 
 /* PROJECTS */
 
@@ -265,12 +264,9 @@ form {
    width: 180px;
 }
 
-  #skills ul {
-    position: relative;
-    margin-top:50px;
+ .tools-icons {
     display:flex;
-    flex-direction:column;
-    left:150px;
+    flex-direction: column;
   }
 
 
