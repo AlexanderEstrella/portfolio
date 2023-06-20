@@ -26,7 +26,7 @@ const Home = () => {
       setTimeout(() => {
         emptyName += string[i];
         setName(emptyName);
-      }, 1000 * i); // Multiply the delay by 'i' to increment the delay for each iteration
+      }, 300 * i); // Multiply the delay by 'i' to increment the delay for each iteration
     }
   }
 

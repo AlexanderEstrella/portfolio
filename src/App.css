@@ -28,6 +28,7 @@ h2 {
   text-transform: uppercase;
   text-align: center;
   text-decoration: underline white;
+  font-size: 1em;
 
 }
 
@@ -249,6 +250,10 @@ color: #fff;
 
 }
 
+#aboutme h2 {
+  font-size: 1em;
+}
+
 .about-header {
   text-align: center;
 }
@@ -331,8 +336,13 @@ color: #fff;
 
 /* PROJECTS */
 
+#projects h2 {
+  font-size: 1em;
+
+}
 .card-container {
   display: flex;
+  margin: 0 auto;
   flex-direction: row;
   gap: 20px;
   justify-content: center;
@@ -340,7 +350,7 @@ color: #fff;
 }
 
 .card {
-  width: 14rem;
+  
 }
 
 .card-body {
