@@ -4,6 +4,8 @@ import {
   faPerson,
   faHouse,
   faEarthAmericas,
+  faregular,
+  faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import MainNav from "./Mainnav";
@@ -14,7 +16,18 @@ const Navbar = () => {
       <MainNav />
       <div className="primaryHeader">
         <div className="nav">
+          <div className="navigationcont">
+            <span className="navigation">Navigation</span>
+          </div>
+
           <ul>
+            <li>
+              <FontAwesomeIcon
+                icon={faAngleDown}
+                beat
+                style={{ color: "#66FCF1" }}
+              />
+            </li>
             <li>
               <Link className="navas" to="/Home">
                 <FontAwesomeIcon icon={faHouse} className="fa-xl" />
