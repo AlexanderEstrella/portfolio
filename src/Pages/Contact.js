@@ -34,7 +34,7 @@ function Contact() {
 
   return (
     <form className="contact-form" ref={form} onSubmit={sendEmail}>
-      <h2 className="form-heading">Contact us</h2>
+      <h2 className="form-heading">Contact Me</h2>
       <div className="form-label">
         <label htmlFor="name">Name</label>
         <input className="form-control" name="user_name" type="text" required />
