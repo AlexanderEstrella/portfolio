@@ -1,16 +1,17 @@
 import React from "react";
 import Contact from "./Contact";
+import Data from "./Data";
 const Projects = () => {
 return (
     <>
       <section id="projects">
         <h2>Projects/Coursework</h2>
         <div className="card-container">
-          {projects.map((project) => (
-            <div key={project.id} className="card">
-              <img src={project.image} alt={project.title} />
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
+          {Data.map((project) => (
+            <div key={Data.id} className="card">
+              <img src={Data.image} alt={Data.title} />
+              <h3>{Data.title}</h3>
+              <p>{Data.description}</p>
             </div>
           ))}
         </div>
