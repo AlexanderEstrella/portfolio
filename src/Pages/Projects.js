@@ -1,12 +1,18 @@
 import React from "react";
 import Contact from "./Contact";
 const Projects = () => {
-  return (
+return (
     <>
       <section id="projects">
         <h2>Projects/Coursework</h2>
         <div className="card-container">
-          <div className="card"></div>
+          {projects.map((project) => (
+            <div key={project.id} className="card">
+              <img src={project.image} alt={project.title} />
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+            </div>
+          ))}
         </div>
       </section>
 
