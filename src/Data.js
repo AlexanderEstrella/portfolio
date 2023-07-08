@@ -16,7 +16,7 @@ const Data = [
   {
     id: 3,
     title: "Portfolio",
-    link: "Portfolio",
+    link: "www.alexanderse.dev",
     description: "The portfolio application is designed to highlight my skills",
     image: "images/portfolio.PNG",
   },
