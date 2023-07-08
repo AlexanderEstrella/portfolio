@@ -3,11 +3,6 @@ import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 
 function Contact() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
   const [unset, setUnset] = useState(true);
 
   const form = useRef();
@@ -45,16 +40,13 @@ function Contact() {
           className="form-control"
           name="user_email"
           type="email"
-          {...register("email", {
-            required: true,
-            pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-          })}
+          required
+          pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$"
         />
-        {errors.email && <span className="error-message">Invalid email</span>}
       </div>
       <div className="form-label">
         <label>Message</label>
-        <textarea className="form-control" name="user_message" required />
+        <textarea className="form-control" name="message" required />
       </div>
       <button className="btn btn-primary" type="submit">
         Send
