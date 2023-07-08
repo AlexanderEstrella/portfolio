@@ -31,7 +31,7 @@ const Data = [
   {
     id: 5,
     title: "Adventurer Alex",
-    link: "Coming Soon/Blog",
+    link: "https://adventureralex-32acd199831b.herokuapp.com/",
     description: "Coming Soon - Personal blog of experiences while traveling",
     image: "images/adventureralex.png",
   },
