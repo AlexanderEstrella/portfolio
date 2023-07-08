@@ -4,7 +4,7 @@ const Data = [
     title: "Lock It Down",
     link: "https://lockitdown-8c2b76d46fff.herokuapp.com/",
     description: "Credentials Manager for users concerned with security",
-    image: "images/lockitdown.png",
+    image: "images/lockitdown.PNG",
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const Data = [
     title: "Adventurer Alex",
     link: "https://adventureralex-32acd199831b.herokuapp.com/",
     description: "Coming Soon - Personal blog of experiences while traveling",
-    image: "images/adventureralex.png",
+    image: "images/adventureralex.PNG",
   },
 ];
 
