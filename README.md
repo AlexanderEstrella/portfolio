@@ -1,5 +1,16 @@
-In the project directory, you can run:
+# React Portfolio
 
-### `npm start`
+I have created a portfolio app to showcase my skills and accomplishments. This app serves as a comprehensive platform to highlight my professional background, projects, and achievements.
 
-Runs the app
+Below is an screenshot of the app
+![Alt text](image.png)
+
+Technologies used:
+
+- React
+- Bootstrap
+- EmailJs
+
+Contributors:
+
+- Alex Martinez
