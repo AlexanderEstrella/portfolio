@@ -28,11 +28,7 @@ const Navbar = () => {
                 style={{ color: "#66FCF1" }}
               />
             </li>
-            <li>
-              <Link className="navas" to="/Home">
-                <FontAwesomeIcon icon={faHouse} className="fa-xl" />
-              </Link>
-            </li>
+
             <li>
               <Link to="/About">
                 <FontAwesomeIcon icon={faPerson} className="fa-xl" />

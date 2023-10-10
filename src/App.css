@@ -1,24 +1,33 @@
+:root {
+  --background-color: #0B0C10;
+  --text-color: #fff;
+  --font-family: sans-serif;
+  --font-size-normal: 1.5rem;
+  --font-size-large: 1.3em;
+  --font-size-hover: 1.5em;
+  --primary-color: yellow;
+}
 
-/* General styles */
+/* Common styles */
 
 body {
-  background-color: #0B0C10;
-  color: #fff;
-  font-family: sans-serif;
-  font-size: 1.5rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size-normal);
   overflow: scroll;
 }
 
 .bi {
   display: flex;
   justify-content: center;
-  font-size: 1.3em;
+  font-size: var(--font-size-large);
 }
 
 .bi:hover {
   cursor: pointer;
-  font-size: 1.5em;
-  color: yellow;
+  font-size: var(--font-size-hover);
+  color: var(--primary-color);
 }
 
 .arrow {
@@ -38,7 +47,8 @@ li {
   list-style: none;
 }
 
-/* nav */
+/* Navigation styles */
+
 .primaryHeader {
   position: fixed;
   max-width: 100%;
@@ -60,7 +70,8 @@ li {
   top: -50px;
 }
 
-.navigation {
+.navigation,
+.nav {
   transform: rotate(90deg);
 }
 
@@ -78,7 +89,6 @@ li {
   bottom: 30%;
   transform: translate(-50%, -50%);
   margin: 0 auto;
-  z-index: 100;
 }
 
 .navigation {
@@ -93,8 +103,8 @@ li {
   top: 0;
   right: 0;
   color: #fff;
-  font-family: sans-serif;
-  font: 100;
+  font-family: var(--font-family);
+  font-weight: 100;
   font-size: 0.87em;
   margin-right: 20px;
   margin-top: 10px;
@@ -166,7 +176,7 @@ li {
 .shortdes {
   margin-left: 80px;
   text-align: left;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, var(--font-family);
   font-weight: 600;
   font-size: 2rem;
   opacity: 0.5;
@@ -288,7 +298,7 @@ li {
 
 .aboutdetails {
   font-size: 1.5rem;
-  font-family: sens, sans-serif;
+  font-family: sens, var(--font-family);
   max-width:800px;
   margin-left: 10%;
 
@@ -434,10 +444,13 @@ ul {
 .fa-xl {
   color: #fff;
   font-size: 1em;
+  z-index: 999;
 }
 
 .fa-xl:hover {
   cursor: pointer;
+  z-index: 999;
+  
 }
 
 /* Contact form*/
@@ -523,7 +536,6 @@ label {
   }
 
   .nav {
-    z-index: 100;
     display: inline-block;
     position: fixed;
     left: 90%;
@@ -531,6 +543,7 @@ label {
     transform: translate(-50%, -50%);
     margin: 0 auto;
     z-index: 100;
+    padding-left: 5%;
   }
 
   .aboutimg {
@@ -564,6 +577,7 @@ label {
 }
 
 @media (max-width: 1000px) {
+  
 .about-me-box {
     display: flex;
     flex-direction: column;
@@ -601,7 +615,6 @@ label {
   }
 
   .nav {
-    z-index: 100;
     display: inline-block;
     position: fixed;
     left: 90%;
@@ -674,10 +687,9 @@ label {
   }
 
   .nav {
-    z-index: 100;
     display: inline-block;
     position: fixed;
-    left: 90%;
+    left: 87%;
     bottom: 25%;
     transform: translate(-50%, -50%);
     margin: 0 auto;
