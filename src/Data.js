@@ -35,6 +35,14 @@ const Data = [
     description: "Coming Soon - Personal blog of experiences while traveling",
     image: "images/adventureralex.PNG",
   },
+
+  {
+    id: 6,
+    title: "Financial Planner",
+    link: "https://financialplanner-01a6fab8d08a.herokuapp.com/",
+    description: "Financial Planner that provides user with a interactive UI",
+    image: "images/financialplanner.PNG",
+  },
 ];
 
 export default Data;
