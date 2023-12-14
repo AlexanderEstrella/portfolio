@@ -277,19 +277,33 @@ li {
   }
 }
 
+@keyframes floatAnimation {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
 .Programminglangs {
   font-size: 1.5em;
   position: relative;
   left: 80px;
   display: flex;
   justify-content: flex-start;
-  gap:20px;
-  
-}
-.iconstyle {
-  box-shadow: 2px 2px 4px #66FCF1;
+  gap: 15px;
 }
 
+.iconstyle {
+  box-shadow: 2px 2px 4px #66FCF1;
+  margin: 0 10px;
+  display: inline-block;
+  animation: floatAnimation 2s ease-in-out infinite;
+}
 /* About me */
 #aboutme {
   padding: 10%;

@@ -15,17 +15,6 @@ const Home = () => {
     shiftName();
   }, []);
 
-  const props = useSpring({
-    from: { transform: "translateY(0px)" },
-    to: { transform: "translateY(-5px)" },
-    config: {
-      duration: 4000,
-      reset: false,
-      reverse: false,
-    },
-    loop: true,
-  });
-
   function shiftName() {
     const nameElement = document.getElementsByClassName("subheading")[0];
     let emptyName = "";
@@ -62,15 +51,9 @@ const Home = () => {
         the web.
       </p>
       <div className="Programminglangs">
-        <animated.div className="iconstyle" style={props}>
-          <SiJavascript />
-        </animated.div>
-        <animated.div className="iconstyle" style={props}>
-          <SiPython />
-        </animated.div>
-        <animated.div className="iconstyle" style={props}>
-          <SiCsharp />
-        </animated.div>
+        <SiJavascript className="iconstyle" />
+        <SiPython className="iconstyle" />
+        <SiCsharp className="iconstyle" />
       </div>
       <ul className="socials">
         <li>
