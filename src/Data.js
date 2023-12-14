@@ -10,7 +10,7 @@ const Data = [
     id: 2,
     title: "GMNails",
     link: "https://gmnailsorlando.netlify.app/",
-    description: "Website design for Local business in Orlando, FL",
+    description: "Website design for Local Nail business in Orlando, FL",
     image: "images/gmnails.PNG",
   },
   {
@@ -25,7 +25,8 @@ const Data = [
     id: 4,
     title: "Weather App",
     link: "https://alexanderestrella.github.io/Weather-API/",
-    description: "Weather app that displays a 3-day forecast",
+    description:
+      "Weather app that displays a 3-day forecast incase of rainy days",
     image: "images/weatherimg.PNG",
   },
   {
