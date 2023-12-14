@@ -302,7 +302,8 @@ li {
   box-shadow: 2px 2px 4px #66FCF1;
   margin: 0 10px;
   display: inline-block;
-  animation: floatAnimation 2s ease-in-out infinite;
+  animation: floatAnimation 3s ease-in-out infinite;
+  border-radius: 30%;
 }
 /* About me */
 #aboutme {
@@ -359,28 +360,6 @@ li {
   height: 15vh;
 }
 
-.tools-icons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 5% auto;
-  width: 100%;
-  justify-content: space-around;
-  text-align: center;
-}
-
-.tools-icons i {
-  display: flex;
-  font-size: 6rem;
-  flex-basis: 23%;
-  margin: 10px;
-  padding: 10px;
-  justify-content: center;
-}
-
-.tools-icons i:hover {
-  color: #66FCF1;
-}
 
 /* PROJECTS */
 
@@ -452,20 +431,7 @@ form {
   flex-direction: column;
 }
 
-#top,
-#top:focus,
-#top:active {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: white;
-  font-size: 1.2rem;
-}
 
-#top:hover {
-  font-size: 1.5rem;
-}
 
 /* home */
 ul {
@@ -494,6 +460,7 @@ ul {
 .contact-form {
   max-width: 400px;
   margin: 0 auto;
+  display: flex;
 }
 
 .form-heading {
@@ -508,6 +475,27 @@ ul {
 label {
   display: block;
   font-weight: bold;
+}
+
+.btn-primary {
+  align-self: center;
+  margin: 0 0 auto;
+width: 50px;
+  height: 50px;
+  margin: 12px;
+  border-radius: 50px;
+  border: none;
+  font-size: 15px;
+  background-color: #66FCF1;
+  color: black;
+  transition: 0.2s all;
+  box-shadow: 0 0 10px black;
+text-align: center;
+}
+
+.btn-primary:focus {
+  transform: scale(0.8);
+    box-shadow: 0 0 5px black;
 }
 
 .form-control {

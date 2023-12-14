@@ -48,7 +48,7 @@ function Contact() {
         <label>Message</label>
         <textarea className="form-control" name="message" required />
       </div>
-      <button className="btn btn-primary" type="submit">
+      <button className="btn-primary" type="submit">
         Send
       </button>
       <div className={unset ? "success-message" : "success-message visible"}>
