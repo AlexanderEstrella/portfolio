@@ -5,13 +5,26 @@ import {
   faLinkedin,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
-
+import { SiCsharp, SiJavascript, SiPython } from "react-icons/si";
+import "../App.css";
+import { useSpring, animated } from "react-spring";
 const Home = () => {
   const [name, setName] = useState("");
 
   useEffect(() => {
     shiftName();
   }, []);
+
+  const props = useSpring({
+    from: { transform: "translateY(0px)" },
+    to: { transform: "translateY(-5px)" },
+    config: {
+      duration: 4000,
+      reset: false,
+      reverse: false,
+    },
+    loop: true,
+  });
 
   function shiftName() {
     const nameElement = document.getElementsByClassName("subheading")[0];
@@ -48,7 +61,17 @@ const Home = () => {
         <br></br>I love to design front-ends and build backend applications for
         the web.
       </p>
-
+      <div className="Programminglangs">
+        <animated.div className="iconstyle" style={props}>
+          <SiJavascript />
+        </animated.div>
+        <animated.div className="iconstyle" style={props}>
+          <SiPython />
+        </animated.div>
+        <animated.div className="iconstyle" style={props}>
+          <SiCsharp />
+        </animated.div>
+      </div>
       <ul className="socials">
         <li>
           <a
