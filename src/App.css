@@ -1,11 +1,18 @@
 :root {
-  --background-color: #0B0C10;
-  --text-color: #fff;
-  --font-family: sans-serif;
-  --font-size-normal: 1.5rem;
-  --font-size-large: 1.3em;
-  --font-size-hover: 1.5em;
-  --primary-color: yellow;
+  --background-color: #f8f9fa;
+  /* Light grayish-blue background */
+  --text-color: #333;
+  /* Dark gray text color */
+  --font-family: 'Georgia', serif;
+  /* Serif font for a sophisticated feel */
+  --font-size-base: 1.6rem;
+  /* Larger base font size for better readability */
+  --font-size-large: 1.4em;
+  /* Slightly reduced font size for larger text */
+  --font-size-hover: 1.6em;
+  /* Slightly increased font size for hover effects */
+  --primary-color: #6c757d;
+  /* Subdued grayish-blue as the primary color */
 }
 
 /* Common styles */
@@ -14,10 +21,38 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--font-family);
-  font-size: var(--font-size-normal);
-  overflow: scroll;
+  font-size: var(--font-size-base);
+  line-height: 1.4;
+  /* Improved line height for better readability */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* Hide horizontal scrollbar */
 }
 
+/* Improve readability of headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-color);
+}
+
+/* Style links */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--primary-color);
+  /* Add an underline on hover */
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+a:hover {
+  border-bottom: 2px solid var(--primary-color);
+  /* Increase underline thickness on hover */
+}
 .bi {
   display: flex;
   justify-content: center;
@@ -35,13 +70,6 @@ body {
   text-decoration: none;
 }
 
-h1,
-h2 {
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: underline white;
-  font-size: 1em;
-}
 
 li {
   list-style: none;
@@ -66,15 +94,34 @@ li {
 }
 
 .navigationcont {
+  color: black;
   position: relative;
   top: -30px;
   right: 0px;
   left: 10px;
+  animation: shake 5.0s ease-in-out infinite;
+}
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25%,
+  75% {
+    transform: translateX(-5px);
+    /* Adjust the shake distance as needed */
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
 }
 
 .navigation {
-  transform: rotate(90deg);
   
+  transform: rotate(90deg);
 }
 
 .spacer-about {
@@ -97,14 +144,14 @@ li {
   position: absolute;
   top: 0;
   left: 0;
-  color: #fff;
+  color: #000000;
 }
 
 .resumenav {
   position: absolute;
   top: 0;
   right: 0;
-  color: #fff;
+  color: black;
   font-family: var(--font-family);
   font-weight: 100;
   font-size: 0.87em;
@@ -134,7 +181,7 @@ li {
   font-family: arial;
   font-weight: 600;
   justify-content: left;
-  color: #66FCF1;
+  color: #3498db;
   margin-left: 80px;
 }
 
@@ -172,7 +219,7 @@ li {
   font-weight: 600px;
   font-size: 1.0rem;
   opacity: 0.5;
-  color: #66FCF1;
+  color: #3498db;
   
 }
 
@@ -184,7 +231,7 @@ li {
   font-weight: 600px;
   font-size: 2rem;
   opacity: 0.5;
-  color: #66FCF1;
+  color: #3498db;
   
 }
 
@@ -196,7 +243,7 @@ li {
   font-weight: 600;
   font-size: 2rem;
   opacity: 0.5;
-  color: #66FCF1;
+  color: #3498db;
 }
 
 .socials {
@@ -205,17 +252,17 @@ li {
   bottom: 10%;
   left: 5%;
   font-size: 2.0rem;
-  color: #fff;
+  color: black;
 }
 
 .socialslink {
-  color: white;
+  color: black;
   font-size: 1em;
   transition: 0.2s all;
 }
 
 .socialslink:hover {
-  color: #66FCF1;
+  color: #1d06eb;
   /* Use a different property to test */
   transform: scale(0.4);
   box-shadow: 0 0 5px black;
@@ -269,7 +316,7 @@ li {
   75% {
     transform: translateY(-22px) scaleY(.9);
     opacity: 1;
-  }
+  } 
 
   100% {
     transform: translateY(0px) scaleY(1);
@@ -444,7 +491,7 @@ ul {
 
 .fa-xl {
   transition: 0.2s all;
-  color: #fff;
+  color: black;
   font-size: 1em;
   z-index: 100;
 }
@@ -549,7 +596,7 @@ text-align: center;
     top: -50px;
     z-index: 100;
   }
-
+ 
   .navigation {
     transform: rotate(90deg);
     
@@ -707,6 +754,7 @@ text-align: center;
   }
 
   .navigation {
+    color: black;
     transform: rotate(90deg);
   }
 

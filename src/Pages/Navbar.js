@@ -25,7 +25,7 @@ const Navbar = () => {
               <FontAwesomeIcon
                 icon={faAngleDown}
                 beat
-                style={{ color: "#66FCF1" }}
+                style={{ color: "#0905f5" }}
               />
             </li>
 

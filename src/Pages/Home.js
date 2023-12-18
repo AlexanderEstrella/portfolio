@@ -41,9 +41,9 @@ const Home = () => {
         <div className="l">l</div>
         <div className="o">o!</div>
       </div>
+      <p className="webpassion"> Welcome to my Portfolio</p>
       <span className="subheading">{name}</span>
       <h3 className="subsubheading">a Fullstack developer</h3>
-      <p className="webpassion"> I have a passion for the web</p>
       <p className="shortdes">
         I'm a fullstack engineer with a drive for innovation and learning in
         technology.
