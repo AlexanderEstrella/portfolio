@@ -32,7 +32,13 @@ function Contact() {
       <h2 className="form-heading">Contact Me</h2>
       <div className="form-label">
         <label htmlFor="name">Name</label>
-        <input className="form-control" name="user_name" type="text" required />
+        <input
+          className="form-control"
+          name="user_name"
+          type="text"
+          required
+          placeholder="Enter your name"
+        />
       </div>
       <div className="form-label">
         <label>Email</label>
@@ -41,12 +47,18 @@ function Contact() {
           name="user_email"
           type="email"
           required
+          placeholder="Enter your email"
           pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$"
         />
       </div>
       <div className="form-label">
         <label>Message</label>
-        <textarea className="form-control" name="message" required />
+        <textarea
+          className="form-control"
+          name="message"
+          required
+          placeholder="Enter your message"
+        />
       </div>
       <button className="btn-primary" type="submit">
         Send
