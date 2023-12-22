@@ -10,7 +10,7 @@ const About = () => {
       <section id="aboutme">
         <div className="about-header" id="aboutmedes">
           <h2>About Me</h2>
-          <span>Let's jump right in!</span>
+          <span>Let's talk business!</span>
         </div>
         <div className="spacer-about"></div>
 
@@ -21,32 +21,28 @@ const About = () => {
 
           <div className="aboutdetails">
             <p>
-              Hello World! I'm Alexander Estrella, a Full-Stack Web Developer
-              based in Florida, originally from the Dominican Republic. I
-              kick-started my coding journey as a hobby, and now I'm turning
-              that passion into a profession.
+              Greetings! I'm Alexander Estrella, a Florida-based Full-Stack Web
+              Developer originally from the Dominican Republic. What began as a
+              coding hobby has blossomed into my thriving profession.
             </p>
 
             <p>
-              <span>Skill set:</span> I'm constantly learning, and my toolkit
-              includes Atom, VS Code, and Git for version control.
+              <span>Skills:</span> I am driven to use modern tools, including
+              Atom, VS Code, and Git for version control, to craft exceptional
+              products.
             </p>
 
             <p>
-              I'm on a mission to expand my expertise by diving into TypeScript
-              and Python. With a solid foundation in vanilla JavaScript, I'm
-              immersed in React to deepen my understanding.
+              My aspiration is to not only evolve as a developer but also to
+              contribute to your team's success. I bring a deep passion for
+              crafting modern, classy websites that not only showcase your brand
+              but also contribute to increased sales.
             </p>
 
             <p>
-              My ambition is to evolve as a developer, staying abreast of the
-              latest technologies. I aspire to contribute to a team that shares
-              a profound enthusiasm for their product and team members.
-            </p>
-
-            <p>
-              Outside the code realm, I cherish family time, video games,
-              outdoor adventures, and the companionship of my dog.
+              Beyond coding, I cherish family time, indulge in video games, seek
+              outdoor adventures, and find companionship in the presence of my
+              loyal dog.
             </p>
           </div>
         </div>
