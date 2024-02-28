@@ -58,7 +58,7 @@ const Home = () => {
       <ul className="socials">
         <li>
           <a
-            className="socialslink"
+            className="fa-xl"
             href="https://github.com/AlexanderEstrella"
           >
             <FontAwesomeIcon icon={faGithub} />
@@ -66,15 +66,15 @@ const Home = () => {
         </li>
         <li>
           <a
-            className="socialslink"
+            className="fa-xl"
             href="https://www.linkedin.com/in/alexanderjestrella/"
           >
-            <FontAwesomeIcon icon={faLinkedin} />
+            <FontAwesomeIcon id="fontawesomeicon" icon={faLinkedin} />
           </a>
         </li>
         <li>
           <a
-            className="socialslink"
+            className="fa-xl"
             href="https://www.facebook.com/alexander.estrellamartinez"
           >
             <FontAwesomeIcon icon={faFacebook} />

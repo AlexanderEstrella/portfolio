@@ -40,17 +40,19 @@ h6 {
 
 /* Style links */
 a {
-  color: var(--primary-color);
   text-decoration: none;
-  border-bottom: 1px solid var(--primary-color);
   /* Add an underline on hover */
   transition: border-bottom 0.3s ease-in-out;
+  color: none;
 }
 
 a:hover {
-  border-bottom: 2px solid var(--primary-color);
+  color: black;
+  font-size: 1em;
+  transition: 0.1s all;
   /* Increase underline thickness on hover */
 }
+
 .bi {
   display: flex;
   justify-content: center;
@@ -76,6 +78,7 @@ li {
 /* Navigation styles */
 
 .primaryHeader {
+  z-index: 1000;
   position: fixed;
   max-width: 100%;
   background-color: #fff;
@@ -129,7 +132,7 @@ li {
 }
 
 .nav {
-  z-index: 100;
+  z-index: 1100;
   display: inline-block;
   position: fixed;
   left: 96%;
@@ -160,7 +163,7 @@ li {
 
 /* Home page */
 #home {
-  z-index: 1;
+  z-index: 0;
   max-width: 1200px;
   margin: 0 auto;
  
@@ -222,7 +225,7 @@ li {
 }
 
 .webpassion {
-  z-index: 1;
+  z-index: 0;
   margin-left: 80px;
   text-align: left;
   font-family: fascinate;
@@ -253,18 +256,6 @@ li {
   color: black;
 }
 
-.socialslink {
-  color: black;
-  font-size: 1em;
-  transition: 0.2s all;
-}
-
-.socialslink:hover {
-  color: #1d06eb;
-  /* Use a different property to test */
-  transform: scale(0.4);
-  box-shadow: 0 0 5px black;
-}
 
 .h {
   opacity: 0;
@@ -481,6 +472,7 @@ form {
 
 /* home */
 ul {
+  z-index: 1000;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -497,7 +489,8 @@ ul {
 
 .fa-xl:hover {
   cursor: pointer;
-  z-index: 100;
+  z-index: 1000;
+  font-size: 30px;
   
 }
 
