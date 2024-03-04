@@ -27,9 +27,8 @@ const About = () => {
             </p>
 
             <p>
-              <span>Skills:</span> I am driven to use modern tools, including
-              Atom, VS Code, and Git for version control, to craft exceptional
-              products.
+              <span>Skills:</span> I have a strong proficiency in JavaScript, Python, and C#.
+  
             </p>
 
             <p>
