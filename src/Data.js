@@ -15,10 +15,10 @@ const Data = [
   },
   {
     id: 3,
-    title: "Portfolio",
-    link: "www.alexanderse.dev",
-    description: "The portfolio application is designed to highlight my skills",
-    image: "images/portfolio.PNG",
+    title: "Financial Planner",
+    link: "https://financialplanner-01a6fab8d08a.herokuapp.com/",
+    description: "Financial Planner that provides user with a interactive UI",
+    image: "images/financialplanner.PNG",
   },
 
   {
@@ -39,10 +39,10 @@ const Data = [
 
   {
     id: 6,
-    title: "Financial Planner",
-    link: "https://financialplanner-01a6fab8d08a.herokuapp.com/",
-    description: "Financial Planner that provides user with a interactive UI",
-    image: "images/financialplanner.PNG",
+    title: "Portfolio",
+    link: "www.alexanderse.dev",
+    description: "The portfolio application is designed to highlight my skills",
+    image: "images/portfolio.PNG",
   },
 ];
 

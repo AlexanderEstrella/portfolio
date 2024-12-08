@@ -6,53 +6,59 @@
   --font-size-large: 1.3em;
   --font-size-hover: 1.5em;
   --primary-color: #6c757d;
+  --highlight-color: #00ff99;
+  --dark-background-color: #121212;
+  --hover-scale: 1.1;
+  --transition-speed: 0.3s;
+  --border-radius: 10px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Common styles */
+/* Global Styles */
 body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--font-family);
   font-size: var(--font-size-base);
-  --primary-color: #0099cc;
-  --undertone-color: #66b3ff;
   line-height: 1.3;
   margin: 0;
-  transition: background-color 0.5s ease, color 0.5s ease;
   padding: 0;
   overflow-x: hidden;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
 }
 
-/* nav */
-.download-btn {
-  display: inline-block;
-  padding: 12px 24px;
-  margin-top: 0;
-  background-color: #FFF;
-  color: #0099cc;
-  font-size: 12px;
-  font-weight: bold;
-  text-align: center;
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2, h3 {
+  font-size: var(--font-size-large);
+  margin-bottom: 20px;
+}
+
+a {
   text-decoration: none;
-  border-radius: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-  line-height: 1.5;
+  color: var(--highlight-color);
 }
 
-.download-btn:hover {
-  background-color: #0077b3;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
 }
 
-.download-btn:active {
-  background-color: #005f8a;
-  transform: translateY(1px);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+li {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-bottom: 10px;
 }
 
-/* Adjust button positioning if it's inside a flex container */
+button, a {
+  transition: all var(--transition-speed);
+}
+
+/* Navbar */
 .navbar-nav {
   display: flex;
   align-items: center;
@@ -66,31 +72,29 @@ body {
   margin-right: 0;
 }
 
-/* Navbar logo container */
 .logo-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #00ff99;
+  background-color: var(--highlight-color);
   color: #121212;
   border-radius: 50%;
   width: 50px;
   height: 50px;
   font-size: 1.5rem;
   font-weight: bold;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: transform var(--transition-speed), background-color var(--transition-speed);
 }
 
 .logo-container:hover {
-  transform: scale(1.1);
+  transform: scale(var(--hover-scale));
   background-color: #00b389;
 }
 
-/* Dark mode styles */
+/* Dark Mode */
 .dark-mode {
-  --background-color: #121212;
+  --background-color: var(--dark-background-color);
   --text-color: #fff;
-  --primary-color: #6c757d;
 }
 
 .dark-mode .navbar {
@@ -105,39 +109,79 @@ body {
   background-color: var(--text-color);
 }
 
-/* Toggle Button for Dark/Light Mode */
 .dark-light-toggle {
   background: none;
   color: #0099cc;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .dark-light-toggle:hover {
-  color: #00ff99;
-  transform: scale(1.1);
+  color: var(--highlight-color);
+  transform: scale(var(--hover-scale));
 }
 
-/* Home styling */
+/* Buttons */
+.download-btn {
+  display: inline-block;
+  background-color: var(--background-color); /* matches background color from :root */
+  color: var(--primary-color); /* using primary color for text */
+  font-size: var(--font-size-base); /* base font size from :root */
+  font-weight: bold;
+  text-align: center;
+  border-radius: var(--border-radius); /* rounded corners from :root */
+  box-shadow: var(--box-shadow); /* box shadow from :root */
+  transition: all var(--transition-speed); /* smooth transition */
+  text-decoration: none;
+}
+
+.download-btn:hover {
+  background-color: var(--highlight-color); /* highlight color for hover */
+  color: #121212; /* dark text color when hovering */
+  transform: scale(var(--hover-scale)); /* smooth hover scale effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* stronger shadow on hover */
+}
+
+.download-btn:active {
+  background-color: #0077b3; /* darker blue on active */
+  transform: translateY(1px); /* press down effect */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* shadow adjustment for active state */
+}
+
+.portfolio-btn {
+  background-color: var(--highlight-color);
+  color: #121212;
+  border-radius: 25px;
+}
+
+.portfolio-btn:hover {
+  background-color: #00b389;
+}
+
+.portfolio-btn:active {
+  background-color: #009966;
+}
+
+/* Home Section */
 .home-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 50px 20px;
-  background-color: #121212;
+  background-color: var(--dark-background-color);
   color: #fff;
-  max-width: 1200px;
-  margin: 0 auto;
   flex-wrap: wrap;
+  margin-top: 60px;
 }
 
-/* Left Content */
+.left-content, .right-content {
+  flex: 1;
+}
+
 .left-content {
   max-width: 50%;
   text-align: left;
-  flex: 1;
 }
 
 .intro-text h1 {
@@ -147,7 +191,7 @@ body {
 
 .subheading {
   font-size: 3rem;
-  color: #00ff99;
+  color: var(--highlight-color);
 }
 
 .subsubheading {
@@ -161,21 +205,13 @@ body {
   margin-top: 20px;
 }
 
-/* Profile circle */
-.right-content {
-  max-width: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-}
-
+/* Profile Circle */
 .profile-circle {
   width: 250px;
   height: 250px;
   border-radius: 50%;
   overflow: hidden;
-  border: 5px solid #00ff99;
+  border: 5px solid var(--highlight-color);
 }
 
 .profile-circle img {
@@ -200,12 +236,12 @@ body {
 .iconstyle {
   font-size: 2.5rem;
   margin: 10px;
-  transition: all 0.3s ease;
+  transition: all var(--transition-speed);
 }
 
 .iconstyle:hover {
   transform: scale(1.2);
-  color: #00ff99;
+  color: var(--highlight-color);
 }
 
 /* Social Links */
@@ -224,53 +260,296 @@ body {
 .socials a {
   color: #fff;
   font-size: 2rem;
-  transition: color 0.3s ease;
+  transition: color var(--transition-speed);
 }
 
 .socials a:hover {
-  color: #00ff99;
+  color: var(--highlight-color);
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+/* About Section */
+.about-section {
+  text-align: left;
+  padding: 100px 20px;
+  margin: 0 auto;
 }
 
-/* Media Queries for Responsiveness */
+.about-header h2 {
+  font-size: 2rem;
+  color: var(--highlight-color);
+  margin-bottom: 10px;
+}
+
+.about-header span {
+  font-size: 1.2rem;
+}
+
+.spacer-about {
+  margin-bottom: 40px;
+}
+
+.about-me-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aboutdetails {
+  flex: 1 1 100%;
+}
+
+.aboutdetails p {
+  margin-bottom: 20px;
+}
+
+.portfolio-btn-container {
+  margin-top: 20px;
+}
+
+/* Skills Section */
+.skills-section {
+  padding: 60px 20px;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: var(--highlight-color);
+}
+
+.skills-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.skill-card {
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card h3 {
+  font-size: var(--font-size-large);
+  margin-bottom: 15px;
+}
+
+/* Projects*/
+#projects {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: var(--background-color);
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  color: var(--highlight-color);
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  display: block;
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: opacity var(--transition-speed);
+}
+
+.card img:hover {
+  opacity: 0.9;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin: 20px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0 20px 20px;
+}
+
+/* Contact form */
+
+/* Style for the contact form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px; /* Form will have a max width of 600px */
+  margin: 0 auto; /* Centers the form horizontally */
+  padding: 2rem;
+  background-color: var(--background-color); /* White background */
+  border-radius: var(--border-radius); /* Rounded corners */
+  box-shadow: var(--box-shadow); /* Adds a subtle shadow */
+  font-family: var(--font-family);
+}
+
+/* Heading styling */
+.form-heading {
+  font-size: var(--font-size-large);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+/* Form labels */
+.form-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+/* Form label text */
+.form-label label {
+  font-size: var(--font-size-base);
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+/* Form control styling */
+.form-control {
+  padding: 0.75rem;
+  font-size: var(--font-size-base);
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius); /* Rounded corners */
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  transition: border-color var(--transition-speed);
+}
+
+.form-control:focus {
+  border-color: var(--highlight-color); /* Highlight border color on focus */
+  outline: none;
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: var(--font-size-base);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color var(--transition-speed), transform var(--transition-speed);
+  margin-top: 1rem;
+}
+
+.btn-primary:hover {
+  background-color: var(--highlight-color); /* Highlight color on hover */
+  transform: scale(var(--hover-scale)); /* Slightly enlarge the button on hover */
+}
+
+/* Success message styling */
+.success-message {
+  display: none;
+  margin-top: 1rem;
+  background-color: #28a745;
+  color: white;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.success-message.visible {
+  display: block;
+}
+
+/* Mobile responsiveness */
 @media (max-width: 768px) {
   .home-section {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    margin-top: 70px;
   }
 
-  .left-content,
-  .right-content {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .profile-circle {
-    width: 200px;
-    height: 200px;
-  }
-
-  .footer-stats {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-stat-item {
-    margin-top: 10px;
-  }
-
-  .socials {
+  .about-section {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  #projects h2 {
+    font-size: 2rem;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .card h3 {
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+  .contact-form {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .form-heading {
+    font-size: var(--font-size-base);
+  }
+
+  .form-control {
+    font-size: 1rem; /* Slightly smaller input fields */
+  }
+
+  .btn-primary {
+    padding: 0.5rem 1rem;
   }
 }
 
@@ -294,19 +573,20 @@ body {
   .footer-stat-item {
     font-size: 1rem;
   }
-}
 
-/* Download Button */
-.download-btn {
-  padding: 10px 20px;
-  background-color: #00ff99;
-  color: #121212;
-  text-decoration: none;
-  font-size: 1.1rem;
-  border-radius: 25px;
-  transition: background-color 0.3s ease;
-}
+  #projects h2 {
+    font-size: 1.5rem;
+  }
 
-.download-btn:hover {
-  background-color: #a3f7d8;
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 0.8rem;
+  }
 }
